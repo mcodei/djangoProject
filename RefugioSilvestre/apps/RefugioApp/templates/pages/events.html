@@ -1,0 +1,210 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% load tailwind_tags %}
+
+{% block title %}
+Eventos | Refugio Silvestre
+{% endblock title %}
+
+{% block navbar %}
+
+{% include '../components/navbar.html' %}
+
+{% endblock navbar %}
+
+{% block content %}
+
+{% comment %}  Header Image start {% endcomment %}
+<section class="section_image" style="background-image: url('../../static/img/events_header.jpg');">
+    <div class="content_image">
+        <span class="text-lg font-medium border-b border-secondary py-1">Nuestros Eventos</span>
+        <h2 class="text-3xl font-semibold my-3">Tenemos eventos que no puedes perderte</h2>
+        <p class="text-base text-white flex text-center font-medium">
+            Encuéntralos aquí:
+        </p>
+    </div>
+</section>
+
+ {% comment %} Header Image end  {% endcomment %}
+
+<section class="text-black font-Inter flex flex-col md:my-6 lg:my-6">
+    <div class="flex justify-center items-center my-5">
+        <div class="border border-solid border-slate-500 py-4 rounded-full w-1/2 flex justify-center items-center cursor-pointer bg-white md:w-1/4">
+            <div class="px-2 text-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                </svg>
+            </div>
+            <div class="text-primary text-base font-semibold px-2">
+                <span>Filtros</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-auto h-auto items-center flex overflow-x-auto overscroll-x-contain space-x-4 rounded-b-xl p-6 scrollbar-hide lg:grid lg:grid-cols-4 lg:gap-y-8 lg:space-x-0 lg:justify-items-center">
+        <div class="w-64 h-auto flex-none bg-white shadow-lg rounded-b-xl overflow-hidden rounded-t-xl md:w-80 lg:w-72">
+            <div class="">
+                <img src="../../static/img/events_event_1.jpg" alt="">
+            </div>
+            <div class="w-full text-center p-4 text-sm">
+                <div class="justify-center items-center font-semibold text-primary py-2 md:pt-2 md:pb-6">Nombre de Evento</div>
+                <div class="bg-tertiary py-2 flex justify-evenly rounded-md">
+                    <span>Fecha:</span> <span>31/12/2001</span>
+                </div>
+                <div class="font-medium flex justify-between items-center py-2 md:pt-4 md:pb-4">
+                    <div class="">
+                        Desde <span class="font-bold">S/ 20.00</span>
+                    </div>
+                    <button class="py-2 px-4 bg-primary rounded-full text-white focus:bg-white focus:text-primary focus:border-2 focus:border-solid focus:border-primary">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="w-64 h-auto flex-none bg-white shadow-lg rounded-b-xl overflow-hidden rounded-t-xl md:w-80 lg:w-72">
+            <div class="">
+                <img src="../../static/img/events_event_1.jpg" alt="">
+            </div>
+            <div class="w-full text-center p-4 text-sm">
+                <div class="justify-center items-center font-semibold text-primary py-2 md:pt-2 md:pb-6">Nombre de Evento</div>
+                <div class="bg-tertiary py-2 flex justify-evenly rounded-md">
+                    <span>Fecha:</span> <span>31/12/2001</span>
+                </div>
+                <div class="font-medium flex justify-between items-center py-2 md:pt-4 md:pb-4">
+                    <div class="">
+                        Desde <span class="font-bold">S/ 20.00</span>
+                    </div>
+                    <button class="py-2 px-4 bg-primary rounded-full text-white focus:bg-white focus:text-primary focus:border-2 focus:border-solid focus:border-primary">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="w-64 h-auto flex-none bg-white shadow-lg rounded-b-xl overflow-hidden rounded-t-xl md:w-80 lg:w-72">
+            <div class="">
+                <img src="../../static/img/events_event_1.jpg" alt="">
+            </div>
+            <div class="w-full text-center p-4 text-sm">
+                <div class="justify-center items-center font-semibold text-primary py-2 md:pt-2 md:pb-6">Nombre de Evento</div>
+                <div class="bg-tertiary py-2 flex justify-evenly rounded-md">
+                    <span>Fecha:</span> <span>31/12/2001</span>
+                </div>
+                <div class="font-medium flex justify-between items-center py-2 md:pt-4 md:pb-4">
+                    <div class="">
+                        Desde <span class="font-bold">S/ 20.00</span>
+                    </div>
+                    <button class="py-2 px-4 bg-primary rounded-full text-white focus:bg-white focus:text-primary focus:border-2 focus:border-solid focus:border-primary">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="w-64 h-auto flex-none bg-white shadow-lg rounded-b-xl overflow-hidden rounded-t-xl md:w-80 lg:w-72">
+            <div class="">
+                <img src="../../static/img/events_event_1.jpg" alt="">
+            </div>
+            <div class="w-full text-center p-4 text-sm">
+                <div class="justify-center items-center font-semibold text-primary py-2 md:pt-2 md:pb-6">Nombre de Evento</div>
+                <div class="bg-tertiary py-2 flex justify-evenly rounded-md">
+                    <span>Fecha:</span> <span>31/12/2001</span>
+                </div>
+                <div class="font-medium flex justify-between items-center py-2 md:pt-4 md:pb-4">
+                    <div class="">
+                        Desde <span class="font-bold">S/ 20.00</span>
+                    </div>
+                    <button class="py-2 px-4 bg-primary rounded-full text-white focus:bg-white focus:text-primary focus:border-2 focus:border-solid focus:border-primary">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="w-64 h-auto flex-none bg-white shadow-lg rounded-b-xl overflow-hidden rounded-t-xl md:w-80 lg:w-72">
+            <div class="">
+                <img src="../../static/img/events_event_1.jpg" alt="">
+            </div>
+            <div class="w-full text-center p-4 text-sm">
+                <div class="justify-center items-center font-semibold text-primary py-2 md:pt-2 md:pb-6">Nombre de Evento</div>
+                <div class="bg-tertiary py-2 flex justify-evenly rounded-md">
+                    <span>Fecha:</span> <span>31/12/2001</span>
+                </div>
+                <div class="font-medium flex justify-between items-center py-2 md:pt-4 md:pb-4">
+                    <div class="">
+                        Desde <span class="font-bold">S/ 20.00</span>
+                    </div>
+                    <button class="py-2 px-4 bg-primary rounded-full text-white focus:bg-white focus:text-primary focus:border-2 focus:border-solid focus:border-primary">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="w-64 h-auto flex-none bg-white shadow-lg rounded-b-xl overflow-hidden rounded-t-xl md:w-80 lg:w-72">
+            <div class="">
+                <img src="../../static/img/events_event_1.jpg" alt="">
+            </div>
+            <div class="w-full text-center p-4 text-sm">
+                <div class="justify-center items-center font-semibold text-primary py-2 md:pt-2 md:pb-6">Nombre de Evento</div>
+                <div class="bg-tertiary py-2 flex justify-evenly rounded-md">
+                    <span>Fecha:</span> <span>31/12/2001</span>
+                </div>
+                <div class="font-medium flex justify-between items-center py-2 md:pt-4 md:pb-4">
+                    <div class="">
+                        Desde <span class="font-bold">S/ 20.00</span>
+                    </div>
+                    <button class="py-2 px-4 bg-primary rounded-full text-white focus:bg-white focus:text-primary focus:border-2 focus:border-solid focus:border-primary">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="w-64 h-auto flex-none bg-white shadow-lg rounded-b-xl overflow-hidden rounded-t-xl md:w-80 lg:w-72">
+            <div class="">
+                <img src="../../static/img/events_event_1.jpg" alt="">
+            </div>
+            <div class="w-full text-center p-4 text-sm">
+                <div class="justify-center items-center font-semibold text-primary py-2 md:pt-2 md:pb-6">Nombre de Evento</div>
+                <div class="bg-tertiary py-2 flex justify-evenly rounded-md">
+                    <span>Fecha:</span> <span>31/12/2001</span>
+                </div>
+                <div class="font-medium flex justify-between items-center py-2 md:pt-4 md:pb-4">
+                    <div class="">
+                        Desde <span class="font-bold">S/ 20.00</span>
+                    </div>
+                    <button class="py-2 px-4 bg-primary rounded-full text-white focus:bg-white focus:text-primary focus:border-2 focus:border-solid focus:border-primary">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="w-64 h-auto flex-none bg-white shadow-lg rounded-b-xl overflow-hidden rounded-t-xl md:w-80 lg:w-72">
+            <div class="">
+                <img src="../../static/img/events_event_1.jpg" alt="">
+            </div>
+            <div class="w-full text-center p-4 text-sm">
+                <div class="justify-center items-center font-semibold text-primary py-2 md:pt-2 md:pb-6">Nombre de Evento</div>
+                <div class="bg-tertiary py-2 flex justify-evenly rounded-md">
+                    <span>Fecha:</span> <span>31/12/2001</span>
+                </div>
+                <div class="font-medium flex justify-between items-center py-2 md:pt-4 md:pb-4">
+                    <div class="">
+                        Desde <span class="font-bold">S/ 20.00</span>
+                    </div>
+                    <button class="py-2 px-4 bg-primary rounded-full text-white focus:bg-white focus:text-primary focus:border-2 focus:border-solid focus:border-primary">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+</section>
+
+{% endblock content %}
+
+{% block footer %}
+
+{% include '../components/footer.html' %}
+
+{% endblock footer %}
+
+

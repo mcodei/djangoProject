@@ -1,0 +1,4 @@
+Django
+django-tailwind
+python-decouple
+mysqlclient

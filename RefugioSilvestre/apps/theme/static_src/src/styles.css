@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Social Icons Styles - Navbar, Footer */
+.icons_social{
+    @apply w-10 h-10 border-2 rounded-full flex items-center justify-center mx-4 lg:ml-0
+}
+
+/* Navbar Selector */
+.language_selector{
+    @apply bg-transparent border-2 border-secondary text-white p-2 text-sm focus:border-secondary focus:ring-transparent rounded-sm
+}
+
+.section_image{
+    @apply h-screen bg-no-repeat bg-cover bg-center flex justify-center items-center min-h-fit flex-col lg:w-full
+}
+
+.content_image{
+    @apply text-secondary font-Inter bg-mainNavbar p-3 py-5 md:px-12 md:flex md:flex-col md:items-center md:w-full
+}

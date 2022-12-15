@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% load tailwind_tags %}
+
+{% block title %}
+Equipo | Refugio Silvestre
+{% endblock title %}
+
+{% block navbar %}
+
+{% include '../components/navbar.html' %}
+
+{% endblock navbar %}
+
+{% block content %}
+
+{% comment %} Header Image {% endcomment %}
+<section class="section_image" style="background-image: url('../../static/img/team_visitantes.jpg');">
+    <div class="content_image">
+        <span class="text-lg font-medium border-b border-secondary py-1">Nuestro Equipo</span>
+        <h2 class="text-3xl font-semibold my-3">Conoce al equipo del Refugio Silvestre</h2>
+        <p class="text-base text-white flex text-center font-medium">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nesciunt de
+            bitis veniam ipsam corporis incidunt dignissimos atque at magni fuga repellat, 
+        </p>
+    </div>
+</section>
+
+{% comment %} Fin Header Image {% endcomment %}
+
+<section class="text-black font-Inter flex flex-col">
+    <div class="grid md:grid-cols-2 lg:grid-cols-2 lg:my-12 lg:px-24">
+        <div class="relative border border-solid border-slate-300 rounded-2xl mx-10 my-5 overflow-hidden">
+            <div class="py-8 px-7 text-center bg-white">
+                <div class="my-8 flex justify-center items-center">
+                    <figure class="" style="max-width: 120px; display: block;">
+                        <img class="rounded-full" src="../../static/img/team_perfil.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="text-3xl text-primary font-bold h-16">
+                    <p>Casimiro</p>
+                </div>
+                <div class="text-lg mt-6 text-primary">
+                    <p>Fundador</p>
+                </div>
+            </div>
+            <div class="absolute inset-0 z-1 flex flex-col justify-items-start w-full overflow-y-auto opacity-0 hover:opacity-100 focus-within:opacity-100 duration-300 bg-primary bg-opacity-90 text-white text-base p-6 rounded-xl lg:justify-center lg:px-12">
+                <p class="text-left my-6">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio veritatis assumenda quod neque, temporibus ratione, nulla quae aut, ducimus atque exercitationem? Officia facilis explicabo ut, animi magni cum? Consequatur, fugiat.
+                </p>
+            </div>
+        </div>
+        <div class="relative border border-solid border-slate-300 rounded-2xl mx-10 my-5 overflow-hidden">
+            <div class="py-8 px-7 text-center bg-white">
+                <div class="my-8 flex justify-center items-center">
+                    <figure class="" style="max-width: 120px; display: block;">
+                        <img class="rounded-full" src="../../static/img/team_perfil.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="text-3xl text-primary font-bold h-16">
+                    <p>Casimiro</p>
+                </div>
+                <div class="text-lg mt-6 text-primary">
+                    <p>Fundador</p>
+                </div>
+            </div>
+            <div class="absolute inset-0 z-1 flex flex-col justify-items-start w-full overflow-y-auto opacity-0 hover:opacity-100 focus-within:opacity-100 duration-300 bg-primary bg-opacity-90 text-white text-base p-6 rounded-xl lg:justify-center lg:px-12">
+                <p class="text-left my-6">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio veritatis assumenda quod neque, temporibus ratione, nulla quae aut, ducimus atque exercitationem? Officia facilis explicabo ut, animi magni cum? Consequatur, fugiat.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="p-5 text-base md:px-10 text-center">
+        <h2 class="py-2 text-2xl font-semibold my-5 text-primary md:mx-1/2 md:flex md:justify-center">Nuestro Compromiso</h2>
+        <p class="mb-5 text-lg lg:mx-52">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, soluta molestias doloribus labore placeat assumenda excepturi in error nisi natus. Consectetur aspernatur adipisci minima sit neque exercitationem accusantium quos doloribus.
+        </p>
+        <figure class="my-8 md:flex md:justify-center">
+            <img src="../../static/img/team_visitantes.jpg" alt="">
+        </figure>
+    </div>
+</section>
+
+{% endblock content %}
+
+{% block footer %}
+
+{% include '../components/footer.html' %}
+
+{% endblock footer %}
+
+

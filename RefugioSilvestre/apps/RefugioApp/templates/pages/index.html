@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% load tailwind_tags %}
+
+{% block title %}
+Home | Refugio Silvestre
+{% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static '../../static/css/navbar.css' %}" />
+{% endblock css %}
+
+
+{% block navbar %}
+
+{% include '../components/navbar.html' %}
+
+{% endblock navbar %}
+
+{% block content %}
+
+<section class="section_image" style="background-image: url('../../static/img/about_cascada.png');">
+    <div class="content_image">
+        <span class="text-lg font-medium border-b border-secondary py-1">Bienvenido al</span>
+        <h2 class="text-3xl font-semibold my-3">Refugio Silvestre</h2>
+        <p class="text-base text-white flex text-center font-medium">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nesciunt debitis veniam ipsam corporis incidunt dignissimos atque at magni fuga repellat, 
+        </p>
+    </div>
+</section>
+
+<section class="text-black font-Inter flex flex-col lg:flex-row lg:mx-40">
+    {% include '../components/social_networks.html' %}
+    {% include '../components/sidebar.html' %}
+    <div class="p-5 text-black text-base md:px-10 lg:my-12">
+        <p class="mb-5">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, soluta molestias doloribus labore placeat assumenda excepturi in error nisi natus. Consectetur aspernatur adipisci minima sit neque exercitationem accusantium quos doloribus.
+        </p>
+        <p class="mb-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis consequuntur iste eligendi soluta, odit quasi quia libero suscipit possimus ea ipsam. Recusandae aspernatur voluptas neque ratione deserunt a saepe dolorem.
+        </p>
+        <p class="mb-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis consequuntur iste eligendi soluta, odit quasi quia libero suscipit possimus ea ipsam. Recusandae aspernatur voluptas neque ratione deserunt a saepe dolorem.
+        </p>
+        <figure class="my-5 md:flex md:justify-center">
+            <img src="../../static/img/about_entrada.jpg" alt="">
+        </figure>
+    </div>
+</section>
+
+{% endblock content %}
+
+{% block footer %}
+
+{% include '../components/footer.html' %}
+
+{% endblock footer %}
+
+
